@@ -21,7 +21,7 @@ class _ProductListState extends State<ProductList> {
   Future<void> _searchProducts() async {
     final response = await http.get(
       Uri.parse(
-          'https://api.edamam.com/api/food-database/v2/parser?ingr=$_searchQuery&app_id=9a0d6573&app_key=63ec1258039b935f000bab51f1097967'),
+          'https://api.edamam.com/api/food-database/v2/parser?ingr=$_searchQuery&app_id=c86940cf&app_key=f9b9ddc2374373a0e970137ff36301ab'),
     );
 
     if (response.statusCode == 200) {
@@ -93,7 +93,7 @@ class _ProductListState extends State<ProductList> {
               ? Center(
                   child: Text(
                     'Введите запрос',
-                    style: TextStyle(color: Colors.black, fontSize: 20),
+                    style: TextStyle(color: Colors.blue, fontSize: 20),
                   ),
                 )
               : ListView.builder(
@@ -103,7 +103,7 @@ class _ProductListState extends State<ProductList> {
                       padding: const EdgeInsets.all(2.0),
                       child: ListTile(
                         title: Text(_products[index]['food']['label'],
-                            style: TextStyle(color: Colors.black)),
+                            style: TextStyle(color: Colors.blue)),
                         leading: _products[index]['food']['image'] != null &&
                                 _products[index]['food']['image'].isNotEmpty
                             ? SizedBox(
