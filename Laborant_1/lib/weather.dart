@@ -47,8 +47,8 @@ class WeatherForecastTable extends StatelessWidget {
                     'Дата и время',
                     style: TextStyle(
                         fontWeight: FontWeight.normal,
-                        color: Colors.black,
-                        fontSize: 12),
+                        color: Colors.blue,
+                        fontSize: 10),
                     textAlign: TextAlign.center,
                   ),
                 ),
