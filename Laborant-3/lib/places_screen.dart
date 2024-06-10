@@ -35,10 +35,10 @@ class _PlacesListState extends State<PlacesList> {
     try {
       if (selectedTypesString.isEmpty) {
         response = await http.get(Uri.parse(
-            'https://catalog.api.2gis.com/3.0/items?q=$_searchQuery+ +$_searchCity&locale=ru_RU&key=21332ac5-6352-4d09-bd09-104853f0e27d'));
+            'https://catalog.api.2gis.com/3.0/items?q=$_searchQuery+ +$_searchCity&locale=ru_RU&key=73bdfb79-24cc-43b5-95b6-6c818352b0cd'));
       } else {
         response = await http.get(Uri.parse(
-            'https://catalog.api.2gis.com/3.0/items?q=$_searchQuery+ +$_searchCity&type=$selectedTypesString&locale=ru_RU&key=21332ac5-6352-4d09-bd09-104853f0e27d'));
+            'https://catalog.api.2gis.com/3.0/items?q=$_searchQuery+ +$_searchCity&type=$selectedTypesString&locale=ru_RU&key=73bdfb79-24cc-43b5-95b6-6c818352b0cd'));
       }
       if (response.statusCode == 200) {
         setState(() {
