@@ -48,7 +48,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
   Future<void> _fetchProductDetails() async {
     final response = await http.get(
       Uri.parse(
-          'https://api.edamam.com/api/food-database/v2/parser?ingr=${Uri.encodeComponent(widget.foodId)}&app_id=9a0d6573&app_key=63ec1258039b935f000bab51f1097967'),
+          'https://api.edamam.com/api/food-database/v2/parser?ingr=${Uri.encodeComponent(widget.foodId)}&app_id=c86940cf&app_key=f9b9ddc2374373a0e970137ff36301ab'),
     );
 
     if (response.statusCode == 200) {
